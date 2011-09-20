@@ -99,8 +99,8 @@ class SoftDeletableBehavior extends ModelBehavior {
 				}
 			}
 
-			$model->_deleteDependent($id, $cascade);
-			$model->_deleteLinks($id);
+			$model->deleteDependent($id, $cascade);
+			$model->deleteLinks($id);
 		}
 
 		return !empty($deleted);
