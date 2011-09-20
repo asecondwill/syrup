@@ -10,10 +10,19 @@
  * @package app
  * @subpackage app.models.behaviors
  */
-
+	
 /**
  * Model behavior to support soft deleting records.
- *
+ * 
+ * you have to create wrappers for these in AppModel  -surely a hack?	
+ * public function  deleteDependent($id, $cascade){	
+ *  $this->_deleteDependent($id, $cascade);
+ * }
+				
+ * public function  deleteLinks($id){	
+ *  $this->_deleteLinks($id);
+ * }
+
  * @package app
  * @subpackage app.models.behaviors
  */
